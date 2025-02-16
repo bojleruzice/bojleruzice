@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="sr-Latn" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
+  <meta name="keywords" content="Bojleri, Dimnjaci, Prohrom, Inox, Bojler Užice, Bojler Požega, Bojler Bajina Bašta, Bojler Zlatibor, Bojler Priboj, Bojler Nova Varoš" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Essential SEO Tags -->
+  <title>Bojler Užice | Početna</title>
+  <link rel="canonical" href="https://bojleruzice.com/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Bojler | Početna" />
+  <meta property="og:description" content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
+  <meta property="og:url" content="https://bojleruzice.com/" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bojler | Početna" />
+  <meta name="twitter:description" content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630" />
+
+  <!-- Tailwind CSS -->
+  <link href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet" />
+  
+  <!-- AOS CSS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    /* Pinned footer flex layout */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex-grow: 1;
+    }
+
+    /* Hero background - if iOS bounce issues persist, try 'min-h-screen' instead */
+    #vanta-bg {
+      min-height: calc(100vh - 64px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Vanta content wrapper to ensure text is above the canvas */
+    #vanta-content {
+      position: relative;
+      z-index: 2;
+      pointer-events: none;
+    }
+    #vanta-content a,
+    #vanta-content button {
+      pointer-events: auto;
+    }
+
+    /* Mobile dropdown menu (scaleY) */
+    .mobile-menu {
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    .mobile-menu.show {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  </style>
+
+  <!-- JSON-LD: LocalBusiness, SiteNavigationElement, FAQPage (only on index) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bojler Užice",
+    "description": "Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš od 1990.",
+    "url": "https://bojleruzice.com/",
+    "telephone": "+381-31-551-239",
+    "priceRange": "$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Radničkog bataljona 107",
+      "addressLocality": "Užice",
+      "addressRegion": "Zlatiborski okrug",
+      "postalCode": "31000",
+      "addressCountry": "RS"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.862680",
+      "longitude": "19.815599"
+    },
+    "founder": "Porodica Nedeljković",
+    "foundingDate": "1990",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "07:00",
+        "closes": "16:00"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": ["Početna", "Bojleri", "Dimnjaci", "Ostalo", "Kontakt"],
+    "url": [
+      "https://bojleruzice.com/",
+      "https://bojleruzice.com/bojleri.html",
+      "https://bojleruzice.com/dimnjaci.html",
+      "https://bojleruzice.com/prohromski-proizvodi.html",
+      "https://bojleruzice.com/#contact"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koje vrste proizvoda nudite?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nudimo bojlere od prohroma, kućne dimnjake i razne prilagođene inox proizvode za domaćinstva i poslovne objekte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Od kada poslujete i gde se nalazite?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Porodično preduzeće od 1990. godine, nalazimo se u Užicu i dostupni smo klijentima širom regiona."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kako stupiti u kontakt sa vama?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pozovite nas na +381-31-551-239 ili nas kontaktirajte na email bojler.d.ue@gmail.com. Rado ćemo odgovoriti na sva pitanja."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" aria-label="Logo: Bojler Užice" class="text-2xl font-bold text-green-600">
+        Bojler Užice
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:block" aria-label="Glavni meni">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-green-600 font-semibold" aria-label="Početna">Početna</a></li>
+          <li><a href="bojleri.html" class="hover:text-green-600" aria-label="Bojleri">Bojleri</a></li>
+          <li><a href="dimnjaci.html" class="hover:text-green-600" aria-label="Dimnjaci">Dimnjaci</a></li>
+          <li><a href="prohromski-proizvodi.html" class="hover:text-green-600" aria-label="Prohromski proizvodi">Prohromski proizvodi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        id="menuBtn"
+        class="md:hidden focus:outline-none"
+        aria-label="Otvorite ili zatvorite meni"
+      >
+        <svg 
+          id="hamburgerIcon"
+          class="h-7 w-7 text-gray-800" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg 
+          id="closeIcon"
+          class="h-7 w-7 text-gray-800 hidden" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (top-down dropdown) -->
+    <nav 
+      id="mobileMenu" 
+      class="mobile-menu absolute top-16 left-0 w-full bg-white border-t border-gray-200 md:hidden hidden z-50"
+      aria-label="Meni za mobilne uređaje"
+    >
+      <ul class="flex flex-col p-4 space-y-6 text-lg">
+        <li><a href="index.html" class="block hover:text-green-600 font-semibold" aria-label="Početna">Početna</a></li>
+        <li><a href="bojleri.html" class="block hover:text-green-600" aria-label="Bojleri">Bojleri</a></li>
+        <li><a href="dimnjaci.html" class="block hover:text-green-600" aria-label="Dimnjaci">Dimnjaci</a></li>
+        <li><a href="prohromski-proizvodi.html" class="block hover:text-green-600" aria-label="Prohromski proizvodi">Prohromski proizvodi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN content container -->
+  <main class="flex-grow">
+
+    <!-- Hero with Vanta BG -->
+    <section id="vanta-bg" class="relative flex items-center justify-center px-4">
+      <div id="vanta-content" class="w-full max-w-4xl py-10 sm:py-14 md:py-20 lg:py-28 text-center">
+
+        <!-- Title & Subtitle -->
+        <div class="mb-6 sm:mb-8 md:mb-10 lg:mb-12" data-aos="fade-up">
+          <!-- Title: smaller on mobile, bigger on md, largest on lg -->
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3">
+            Premium bojleri i prohromski proizvodi
+          </h1>
+          <!-- Subtitle: smaller on mobile, bigger on md, largest on lg -->
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white">
+            Izrađeno s ljubavlju, traje generacijama
+          </p>
+        </div>
+
+        <!-- Counters row -->
+        <div 
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-10"
+          data-aos="fade-up" data-aos-delay="200"
+        >
+          <!-- Godine rada -->
+          <div class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-md rounded-lg shadow-md flex flex-col items-center px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py=6">
+            <svg 
+              class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-600 mb-2" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="1.5" 
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            <span id="yearsCounter" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 mb-1">0</span>
+            <p class="text-sm sm:text-base md:text-lg font-semibold text-gray-800">Godina poslovanja</p>
+            <p class="text-xs sm:text-sm text-gray-500 mt-1">Od 1990.</p>
+          </div>
+
+          <!-- Srećni klijenti -->
+          <div class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-md rounded-lg shadow-md flex flex-col items-center px-4 py-3 sm:px=6 sm:py-4 md:px-8 md:py-6">
+            <svg 
+              class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-600 mb-2" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="1.5" 
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-4-4h-1" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 20H4v-2a4 4 0 014-4h1" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14h.01" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 9c0 1.105 2.686 2 6 2s6-.895 6-2" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 9a5 5 0 0110 0v0" />
+            </svg>
+            <span id="customersCounter" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 mb-1">0</span>
+            <p class="text-sm sm:text-base md:text-lg font-semibold text-gray-800">Zadovoljnih klijenata</p>
+            <p class="text-xs sm:text-sm text-gray-500 mt-1">Raste svakog dana</p>
+          </div>
+        </div>
+
+        <!-- CTA button (Saznajte više) -->
+        <div data-aos="fade-up" data-aos-delay="300">
+          <a 
+            href="#about"
+            class="inline-block bg-green-600 hover:bg-green-500 text-white font-bold rounded-full 
+                   px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 transition duration-300"
+            aria-label="Saznajte više o nama"
+          >
+            Saznajte više
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O nama -->
+    <section id="about" class="py-16 container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-up" aria-label="Slika - o nama">
+          <img 
+            src="bojler-uzice.jpg" 
+            alt="Proizvodnja bojlera" 
+            width="600" height="400"
+            loading="lazy"
+            class="rounded-lg shadow-lg w-full object-cover"
+          />
+        </div>
+        <div class="md:w-1/2 flex flex-col items-center md:items-start" data-aos="zoom-in">
+          <h2 class="text-3xl font-bold mb-4">O Bojleru</h2>
+          <p class="mb-4">
+            Mi smo porodična firma specijalizovana za proizvodnju visokokvalitetnih bojlera,
+            kućnih dimnjaka i raznovrsnih proizvoda od prohroma (inox). Nalazimo se u Užicu
+            i ponosno sarađujemo sa klijentima u Požegi, Bajinoj Bašti, Zlatiboru, Priboju, Novoj Varoši i šire.
+          </p>
+          <p class="mb-4">
+            Od savremenih bojlera velikih zapremina do inovativnih prohromskih proizvoda, naš cilj je da vam ponudimo najbolje
+            što nudi inox industrija, uz dugotrajan kvalitet.
+          </p>
+          <a 
+            href="bojleri.html" 
+            class="inline-block bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-semibold transition duration=300"
+            aria-label="Istražite naše bojlere"
+          >
+            Istražite bojlere
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Naši proizvodi -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="zoom-in">Najpopularniji proizvodi</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- 1. Bojler -->
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <img 
+              src="standardni-bojler.jpg" 
+              alt="Visoko efikasni bojler" 
+              width="400" height="300"
+              loading="lazy"
+              class="w-full h-48 object-contain rounded mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Visoko efikasni bojler</h3>
+            <p class="text-gray-600 mb-4">Štedi energiju uz vrhunske performanse.</p>
+            <a 
+              href="bojleri.html" 
+              class="text-green-600 hover:text-green-500 font-semibold"
+              aria-label="Saznajte više o bojlerima"
+            >
+              Saznajte više &rarr;
+            </a>
+          </div>
+
+          <!-- 2. Dimnjak -->
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+            <img 
+              src="dimnjak-mala.jpeg" 
+              alt="Prohromski dimnjak" 
+              width="400" height="300"
+              loading="lazy"
+              class="w-full h-48 object-contain rounded mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Prohromski dimnjak</h3>
+            <p class="text-gray-600 mb-4">Kućni dimnjaci otporni na koroziju, sa dugim vekom trajanja.</p>
+            <a 
+              href="dimnjaci.html" 
+              class="text-green-600 hover:text-green-500 font-semibold"
+              aria-label="Saznajte više o dimnjacima"
+            >
+              Saznajte više &rarr;
+            </a>
+          </div>
+
+          <!-- 3. Ostalo -->
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+            <img 
+              src="posuda-za-vino-ili-rakiju.jpg" 
+              alt="Prilagođeni prohromski proizvodi" 
+              width="400" height="300"
+              loading="lazy"
+              class="w-full h-48 object-contain rounded mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Ostali prohromski proizvodi</h3>
+            <p class="text-gray-600 mb-4">Svećnjaci, pekači, posude i više.</p>
+            <a 
+              href="prohromski-proizvodi.html" 
+              class="text-green-600 hover=text-green-500 font-semibold"
+              aria-label="Saznajte više o prilagođenim inox proizvodima"
+            >
+              Saznajte više &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt (bez forme, samo telefoni) -->
+    <section class="py-16 container mx-auto px-4" id="contact">
+      <div class="text-center mb-12" data-aos="zoom-in">
+        <h2 class="text-3xl font-bold">Kontaktirajte nas</h2>
+        <p class="text-gray-600 mt-2">Stojimo vam na raspolaganju za sva pitanja.</p>
+      </div>
+      <div class="text-center max-w-xl mx-auto" data-aos="fade-up" aria-label="Kontakt telefonski broj i email">
+        <p class="mb-4 text-lg">Kontaktirajte nas na:</p>
+        <p class="text-xl font-semibold text-gray-800 mb-2" aria-label="Telefon">+381 31 551 239</p>
+        <p class="text-xl font-semibold text-gray-800 mb-6" aria-label="Email">bojler.d.ue@gmail.com</p>
+        <p class="text-gray-600">Biće nam zadovoljstvo da vam pomognemo.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; <span id="year"></span> <a href="https://www.linkedin.com/in/djordjepantelic/" class="text-gray-200 hover:text-green-500 transition">Đole</a>. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <!-- Skriptovi (Vanta.js, AOS, Mobile Menu, Counter) -->
+  <!-- 1) THREE.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <!-- 2) Vanta Birds -->
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <!-- 3) AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu (top-down dropdown) Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    menuBtn.addEventListener('click', () => {
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+
+      if (mobileMenu.classList.contains('show')) {
+        // Hide the menu
+        mobileMenu.classList.remove('show');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+      } else {
+        // Show the menu
+        mobileMenu.classList.remove('hidden');
+        setTimeout(() => {
+          mobileMenu.classList.add('show');
+        }, 10);
+      }
+    });
+
+    // Counters
+    const currentYear = new Date().getFullYear();
+    const yearsInBusiness = currentYear - 1990;
+    function getDaysSince1990() {
+      const startDate = new Date('1990-01-01');
+      const now = new Date();
+      return Math.floor((now - startDate) / (1000 * 60 * 60 * 24));
+    }
+    const happyCustomers = getDaysSince1990();
+
+    function animateValue(id, start, end, duration, steps = 100) {
+      let current = start;
+      const obj = document.getElementById(id);
+      const range = end - start;
+      const increment = range / steps;
+      const stepTime = duration / steps;
+      let stepCount = 0;
+
+      const timer = setInterval(() => {
+        stepCount++;
+        current = start + increment * stepCount;
+        if (stepCount >= steps) {
+          current = end; 
+          clearInterval(timer);
+        }
+        obj.textContent = Math.floor(current).toLocaleString();
+      }, stepTime);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      animateValue('yearsCounter', 0, yearsInBusiness, 4000, 100);
+      animateValue('customersCounter', 0, happyCustomers, 4000, 100);
+    });
+
+    // Vanta.js Birds
+    let vantaEffect = null;
+    window.addEventListener('load', () => {
+      vantaEffect = VANTA.BIRDS({
+        el: "#vanta-bg",
+        backgroundColor: 0x16202a,
+        color1: 0x4ca1af,
+        color2: 0x8e44ad,
+        birdSize: 1.20,
+        speedLimit: 3.5,
+        separation: 50,
+        alignment: 50,
+        cohesion: 20,
+        quantity: 4.0
+      });
+    });
+  </script>
+</body>
+</html>
