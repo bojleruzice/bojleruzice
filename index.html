@@ -163,8 +163,8 @@
       </button>
     </div>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white border-t border-slate-200 md:hidden hidden"
+    <!-- Mobile Menu (hidden by default, z-50 to be above Vanta) -->
+    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white border-t border-slate-200 md:hidden hidden z-50"
       aria-label="Meni za mobilne uređaje">
       <ul class="flex flex-col p-4 space-y-6 text-lg font-semibold transition-all">
         <li><a href="index.html" class="block hover:text-emerald-600" aria-label="Početna">Početna</a></li>
@@ -271,8 +271,8 @@
 
           <!-- Card 1 -->
           <a href="bojleri.html"
-            class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
-            data-aos="fade-up" data-ripple>
+            class="relative bg-white rounded-lg shadow hover:shadow-lg active:shadow-lg transition p-6 flex flex-col justify-between h-full overflow-hidden"
+            data-aos="fade-up">
             <div>
               <img src="standardni_bojler.webp" alt="Visoko efikasni bojler" width="400" height="300" loading="lazy"
                 class="w-full h-48 object-contain rounded mb-4" />
@@ -282,7 +282,7 @@
               </p>
             </div>
             <div>
-              <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+              <span class="text-emerald-600 font-semibold">
                 Saznajte više &rarr;
               </span>
             </div>
@@ -290,8 +290,8 @@
 
           <!-- Card 2 -->
           <a href="dimnjaci.html"
-            class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
-            data-aos="fade-up" data-aos-delay="100" data-ripple>
+            class="relative bg-white rounded-lg shadow hover:shadow-lg active:shadow-lg transition p-6 flex flex-col justify-between h-full overflow-hidden"
+            data-aos="fade-up" data-aos-delay="100">
             <div>
               <img src="dimnjak_mala.jpeg" alt="Prohromski dimnjak" width="400" height="300" loading="lazy"
                 class="w-full h-48 object-contain rounded mb-4" />
@@ -301,7 +301,7 @@
               </p>
             </div>
             <div>
-              <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+              <span class="text-emerald-600 font-semibold">
                 Saznajte više &rarr;
               </span>
             </div>
@@ -309,8 +309,8 @@
 
           <!-- Card 3 -->
           <a href="prohromski-proizvodi.html"
-            class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
-            data-aos="fade-up" data-aos-delay="200" data-ripple>
+            class="relative bg-white rounded-lg shadow hover:shadow-lg active:shadow-lg transition p-6 flex flex-col justify-between h-full overflow-hidden"
+            data-aos="fade-up" data-aos-delay="200">
             <div>
               <img src="pecenjara.webp" alt="Prilagođeni prohromski proizvodi" width="400" height="300" loading="lazy"
                 class="w-full h-48 object-contain rounded mb-4" />
@@ -320,7 +320,7 @@
               </p>
             </div>
             <div>
-              <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+              <span class="text-emerald-600 font-semibold">
                 Saznajte više &rarr;
               </span>
             </div>
@@ -360,7 +360,7 @@
     </div>
   </footer>
 
-  <!-- Scripts (Vanta.js, AOS, Mobile Menu, Counter, Ripple) -->
+  <!-- Scripts (Vanta.js, AOS, Mobile Menu, Counter) -->
   <!-- 1) THREE.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <!-- 2) Vanta Birds -->
@@ -438,51 +438,7 @@
         quantity: 4.0
       });
     });
-
-    // Ripple Effect (for data-ripple elements)
-    document.addEventListener('click', function (e) {
-      const target = e.target.closest('[data-ripple]');
-      if (target) {
-        const rect = target.getBoundingClientRect();
-        const circle = document.createElement('span');
-        const diameter = Math.max(rect.width, rect.height);
-        const radius = diameter / 2;
-
-        circle.style.width = circle.style.height = `${diameter}px`;
-        circle.style.left = `${e.clientX - rect.left - radius}px`;
-        circle.style.top = `${e.clientY - rect.top - radius}px`;
-        circle.classList.add('ripple-animation');
-
-        // Append ripple
-        target.appendChild(circle);
-
-        // Remove after animation
-        setTimeout(() => {
-          circle.remove();
-        }, 600);
-      }
-    });
   </script>
-
-  <!-- Minimal ripple styling -->
-  <style>
-    .ripple-animation {
-      position: absolute;
-      border-radius: 9999px;
-      background: rgba(99, 194, 165, 0.3);
-      /* emerald-300-ish */
-      transform: scale(0);
-      animation: ripple 0.6s linear;
-      pointer-events: none;
-    }
-
-    @keyframes ripple {
-      to {
-        transform: scale(4);
-        opacity: 0;
-      }
-    }
-  </style>
 </body>
 
 </html>

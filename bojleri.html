@@ -49,7 +49,7 @@
         "name": "Koje vrste bojlera nudite?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nudimo standardne, horizontalne i velike bojlere (300l, 400l, 500l) izrađene od prohroma (inox) ."
+          "text": "Nudimo standardne, horizontalne i velike bojlere (300l, 400l, 500l) izrađene od prohroma (inox)."
         }
       },
       {
@@ -65,7 +65,7 @@
         "name": "Da li pružate garanciju?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Da, svi naši modeli imaju deset godina garanciju na prohromski kazan"
+          "text": "Da, svi naši modeli imaju deset godina garanciju na prohromski kazan."
         }
       }
     ]
@@ -147,7 +147,7 @@
       <nav class="hidden md:block" aria-label="Glavni meni">
         <ul class="flex space-x-6 font-semibold">
           <li><a href="index.html" class="hover:text-emerald-600" aria-label="Početna">Početna</a></li>
-          <li><a href="bojleri.html" class="hover:text-emerald-600 text-emerald-700" aria-label="Bojleri">Bojleri</a>
+          <li><a href="bojleri.html" class="text-emerald-700 hover:text-emerald-600" aria-label="Bojleri">Bojleri</a>
           </li>
           <li><a href="dimnjaci.html" class="hover:text-emerald-600" aria-label="Dimnjaci">Dimnjaci</a></li>
           <li><a href="prohromski-proizvodi.html" class="hover:text-emerald-600"
@@ -168,8 +168,8 @@
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white border-t border-slate-200 md:hidden hidden"
+    <!-- Mobile Menu (z-50) -->
+    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white border-t border-slate-200 md:hidden hidden z-50"
       aria-label="Meni za mobilne uređaje">
       <ul class="flex flex-col p-4 space-y-6 text-lg font-semibold transition-all">
         <li><a href="index.html" class="block hover:text-emerald-600" aria-label="Početna">Početna</a></li>
@@ -206,8 +206,8 @@
 
         <!-- 1. Standardni bojler -->
         <a href="example-standardni.html"
-          class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
-          data-aos="fade-up" data-ripple aria-label="Standardni bojler">
+          class="relative bg-white rounded-lg shadow hover:shadow-lg active:shadow-lg transition p-6 flex flex-col justify-between h-full overflow-hidden"
+          data-aos="fade-up" aria-label="Standardni bojler">
           <div>
             <img src="standardni_bojler.webp" alt="Standardni bojler - Bojler Užice" width="400" height="300"
               loading="lazy" class="w-full h-48 object-contain mb-3 rounded" />
@@ -217,7 +217,7 @@
             </p>
           </div>
           <div class="mt-4">
-            <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+            <span class="text-emerald-600 font-semibold">
               Saznajte više &rarr;
             </span>
           </div>
@@ -225,8 +225,8 @@
 
         <!-- 2. Horizontalni bojler -->
         <a href="example-horizontalni.html"
-          class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
-          data-aos="fade-up" data-aos-delay="100" data-ripple aria-label="Horizontalni bojler">
+          class="relative bg-white rounded-lg shadow hover:shadow-lg active:shadow-lg transition p-6 flex flex-col justify-between h-full overflow-hidden"
+          data-aos="fade-up" data-aos-delay="100" aria-label="Horizontalni bojler">
           <div>
             <img src="horizontalni_bojler.webp" alt="Horizontalni bojler - Bojler Užice" width="400" height="300"
               loading="lazy" class="w-full h-48 object-contain mb-3 rounded" />
@@ -236,7 +236,7 @@
             </p>
           </div>
           <div class="mt-4">
-            <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+            <span class="text-emerald-600 font-semibold">
               Saznajte više &rarr;
             </span>
           </div>
@@ -244,8 +244,8 @@
 
         <!-- 3. Velike zapremine -->
         <a href="example-velike-zapremine.html"
-          class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
-          data-aos="fade-up" data-aos-delay="200" data-ripple aria-label="Bojler velikih zapremina">
+          class="relative bg-white rounded-lg shadow hover:shadow-lg active:shadow-lg transition p-6 flex flex-col justify-between h-full overflow-hidden"
+          data-aos="fade-up" data-aos-delay="200" aria-label="Bojler velikih zapremina">
           <div>
             <img src="bojler_velikog_kapaciteta.webp" alt="Bojler velikog kapaciteta - Bojler Užice" width="400"
               height="300" loading="lazy" class="w-full h-48 object-contain mb-3 rounded" />
@@ -255,7 +255,7 @@
             </p>
           </div>
           <div class="mt-4">
-            <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+            <span class="text-emerald-600 font-semibold">
               Saznajte više &rarr;
             </span>
           </div>
@@ -292,7 +292,7 @@
     </div>
   </footer>
 
-  <!-- AOS & Mobile Menu JS + Ripple -->
+  <!-- AOS & Mobile Menu JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
@@ -309,46 +309,7 @@
       closeIcon.classList.toggle('hidden');
       mobileMenu.classList.toggle('hidden');
     });
-
-    // Ripple effect
-    document.addEventListener('click', function (e) {
-      const target = e.target.closest('[data-ripple]');
-      if (target) {
-        const rect = target.getBoundingClientRect();
-        const circle = document.createElement('span');
-        const diameter = Math.max(rect.width, rect.height);
-        const radius = diameter / 2;
-
-        circle.style.width = circle.style.height = `${diameter}px`;
-        circle.style.left = `${e.clientX - rect.left - radius}px`;
-        circle.style.top = `${e.clientY - rect.top - radius}px`;
-        circle.classList.add('ripple-animation');
-
-        target.appendChild(circle);
-
-        setTimeout(() => {
-          circle.remove();
-        }, 600);
-      }
-    });
   </script>
-  <style>
-    .ripple-animation {
-      position: absolute;
-      border-radius: 9999px;
-      background: rgba(99, 194, 165, 0.3);
-      transform: scale(0);
-      animation: ripple 0.6s linear;
-      pointer-events: none;
-    }
-
-    @keyframes ripple {
-      to {
-        transform: scale(4);
-        opacity: 0;
-      }
-    }
-  </style>
 </body>
 
 </html>
