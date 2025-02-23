@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="sr-Latn" class="h-full">
+<html lang="sr-Latn" class="scroll-smooth">
+
 <head>
-  
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta charset="UTF-8" />
-  <meta name="description" content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
-  <meta name="keywords" content="Bojleri, Dimnjaci, Prohrom, Inox, Bojler Užice, Bojler Požega, Bojler Bajina Bašta, Bojler Zlatibor, Bojler Priboj, Bojler Nova Varoš" />
+  <meta name="description"
+    content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
+  <meta name="keywords"
+    content="Bojleri, Dimnjaci, Prohrom, Inox, Bojler Užice, Bojler Požega, Bojler Bajina Bašta, Bojler Zlatibor, Bojler Priboj, Bojler Nova Varoš" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Essential SEO Tags -->
@@ -15,7 +16,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Bojler | Početna" />
-  <meta property="og:description" content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
+  <meta property="og:description"
+    content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
   <meta property="og:url" content="https://bojleruzice.com/" />
   <meta property="og:image" content="https://via.placeholder.com/1200x630" />
   <meta property="og:type" content="website" />
@@ -23,60 +25,18 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bojler | Početna" />
-  <meta name="twitter:description" content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
+  <meta name="twitter:description"
+    content="Premium bojleri, dimnjaci i prohromski proizvodi za Užice, Požegu, Bajinu Baštu, Zlatibor, Priboj i Novu Varoš. Porodično preduzeće od 1990. godine." />
   <meta name="twitter:image" content="https://via.placeholder.com/1200x630" />
 
-  <!-- Tailwind CSS -->
-  <link href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet" />
-  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Tailwind CSS 3.x via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- AOS CSS (Animate On Scroll) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <style>
-    /* Pinned footer flex layout */
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    main {
-      flex-grow: 1;
-    }
-
-    /* Hero background - if iOS bounce issues persist, try 'min-h-screen' instead */
-    #vanta-bg {
-      min-height: calc(100vh - 64px);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Vanta content wrapper to ensure text is above the canvas */
-    #vanta-content {
-      position: relative;
-      z-index: 2;
-      pointer-events: none;
-    }
-    #vanta-content a,
-    #vanta-content button {
-      pointer-events: auto;
-    }
-
-    /* Mobile dropdown menu (scaleY) */
-    .mobile-menu {
-      transform-origin: top;
-      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      transform: scaleY(0);
-      opacity: 0;
-    }
-    .mobile-menu.show {
-      transform: scaleY(1);
-      opacity: 1;
-    }
-  </style>
 
   <!-- JSON-LD: LocalBusiness, SiteNavigationElement, FAQPage (only on index) -->
   <script type="application/ld+json">
@@ -165,145 +125,110 @@
     ]
   }
   </script>
-
 </head>
-<body class="bg-white text-gray-800">
+
+<body class="flex flex-col min-h-screen bg-white text-slate-800">
 
   <!-- HEADER -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <header class="shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
       <!-- Logo -->
-      <a href="index.html" aria-label="Logo: Bojler Užice" class="text-2xl font-bold text-green-600">
+      <a href="index.html" aria-label="Logo: Bojler Užice" class="text-2xl font-bold text-emerald-600">
         Bojler Užice
       </a>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:block" aria-label="Glavni meni">
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:text-green-600 font-semibold" aria-label="Početna">Početna</a></li>
-          <li><a href="bojleri.html" class="hover:text-green-600" aria-label="Bojleri">Bojleri</a></li>
-          <li><a href="dimnjaci.html" class="hover:text-green-600" aria-label="Dimnjaci">Dimnjaci</a></li>
-          <li><a href="prohromski-proizvodi.html" class="hover:text-green-600" aria-label="Prohromski proizvodi">Prohromski proizvodi</a></li>
+        <ul class="flex space-x-6 font-semibold">
+          <li><a href="index.html" class="hover:text-emerald-600" aria-label="Početna">Početna</a></li>
+          <li><a href="bojleri.html" class="hover:text-emerald-600" aria-label="Bojleri">Bojleri</a></li>
+          <li><a href="dimnjaci.html" class="hover:text-emerald-600" aria-label="Dimnjaci">Dimnjaci</a></li>
+          <li><a href="prohromski-proizvodi.html" class="hover:text-emerald-600"
+              aria-label="Prohromski proizvodi">Prohromski proizvodi</a></li>
         </ul>
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button 
-        id="menuBtn"
-        class="md:hidden focus:outline-none"
-        aria-label="Otvorite ili zatvorite meni"
-      >
-        <svg 
-          id="hamburgerIcon"
-          class="h-7 w-7 text-gray-800" 
-          fill="none" 
-          stroke="currentColor" 
-          stroke-width="2" 
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
+      <button id="menuBtn" class="md:hidden focus:outline-none" aria-label="Otvorite ili zatvorite meni">
+        <!-- Hamburger Icon -->
+        <svg id="hamburgerIcon" class="h-7 w-7 text-slate-800" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-        <svg 
-          id="closeIcon"
-          class="h-7 w-7 text-gray-800 hidden" 
-          fill="none" 
-          stroke="currentColor" 
-          stroke-width="2" 
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
+        <!-- Close Icon -->
+        <svg id="closeIcon" class="h-7 w-7 text-slate-800 hidden" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
 
-    <!-- Mobile Menu (top-down dropdown) -->
-    <nav 
-      id="mobileMenu" 
-      class="mobile-menu absolute top-16 left-0 w-full bg-white border-t border-gray-200 md:hidden hidden z-50"
-      aria-label="Meni za mobilne uređaje"
-    >
-      <ul class="flex flex-col p-4 space-y-6 text-lg">
-        <li><a href="index.html" class="block hover:text-green-600 font-semibold" aria-label="Početna">Početna</a></li>
-        <li><a href="bojleri.html" class="block hover:text-green-600" aria-label="Bojleri">Bojleri</a></li>
-        <li><a href="dimnjaci.html" class="block hover:text-green-600" aria-label="Dimnjaci">Dimnjaci</a></li>
-        <li><a href="prohromski-proizvodi.html" class="block hover:text-green-600" aria-label="Prohromski proizvodi">Prohromski proizvodi</a></li>
+    <!-- Mobile Menu (hidden by default) -->
+    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white border-t border-slate-200 md:hidden hidden"
+      aria-label="Meni za mobilne uređaje">
+      <ul class="flex flex-col p-4 space-y-6 text-lg font-semibold transition-all">
+        <li><a href="index.html" class="block hover:text-emerald-600" aria-label="Početna">Početna</a></li>
+        <li><a href="bojleri.html" class="block hover:text-emerald-600" aria-label="Bojleri">Bojleri</a></li>
+        <li><a href="dimnjaci.html" class="block hover:text-emerald-600" aria-label="Dimnjaci">Dimnjaci</a></li>
+        <li><a href="prohromski-proizvodi.html" class="block hover:text-emerald-600"
+            aria-label="Prohromski proizvodi">Prohromski proizvodi</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- MAIN content container -->
-  <main class="flex-grow">
+  <main class="flex-1">
 
     <!-- Hero with Vanta BG -->
-    <section id="vanta-bg" class="relative flex items-center justify-center px-4">
-      <div id="vanta-content" class="w-full max-w-4xl py-10 sm:py-14 md:py-20 lg:py-28 text-center">
-
+    <section id="vanta-bg" class="relative min-h-[calc(100vh-64px)] flex items-center justify-center overflow-hidden">
+      <!-- Vanta Canvas behind; content in front -->
+      <div id="vanta-content" class="relative z-10 max-w-4xl text-center px-4 py-10 sm:py-14 md:py-20 lg:py-28">
         <!-- Title & Subtitle -->
         <div class="mb-6 sm:mb-8 md:mb-10 lg:mb-12" data-aos="fade-up">
-          <!-- Title: smaller on mobile, bigger on md, largest on lg -->
-          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3">
             Premium bojleri i prohromski proizvodi
           </h1>
-          <!-- Subtitle: smaller on mobile, bigger on md, largest on lg -->
           <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white">
             Izrađeno s ljubavlju, traje generacijama
           </p>
         </div>
 
         <!-- Counters row -->
-        <div 
-          class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-10"
-          data-aos="fade-up" data-aos-delay="200"
-        >
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-12 mb-6 sm:mb-8 md:mb-10"
+          data-aos="fade-up" data-aos-delay="200">
           <!-- Godine rada -->
-          <div class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-md rounded-lg shadow-md flex flex-col items-center px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py=6">
-            <svg 
-              class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-600 mb-2" 
-              fill="none" 
-              stroke="currentColor" 
-              stroke-width="1.5" 
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
+          <div class="bg-white/90 backdrop-blur-md rounded-lg shadow flex flex-col items-center px-6 py-4">
+            <svg class="h-8 w-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
-            <span id="yearsCounter" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 mb-1">0</span>
-            <p class="text-sm sm:text-base md:text-lg font-semibold text-gray-800">Godina poslovanja</p>
-            <p class="text-xs sm:text-sm text-gray-500 mt-1">Od 1990.</p>
+            <span id="yearsCounter" class="text-3xl sm:text-4xl md:text-5xl font-bold text-emerald-600 mb-1">0</span>
+            <p class="text-base sm:text-lg font-semibold text-slate-800">Godina poslovanja</p>
+            <p class="text-sm text-slate-500 mt-1">Od 1990.</p>
           </div>
 
           <!-- Srećni klijenti -->
-          <div class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-md rounded-lg shadow-md flex flex-col items-center px-4 py-3 sm:px=6 sm:py-4 md:px-8 md:py-6">
-            <svg 
-              class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-600 mb-2" 
-              fill="none" 
-              stroke="currentColor" 
-              stroke-width="1.5" 
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
+          <div class="bg-white/90 backdrop-blur-md rounded-lg shadow flex flex-col items-center px-6 py-4">
+            <svg class="h-8 w-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-4-4h-1" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 20H4v-2a4 4 0 014-4h1" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 14h.01" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M7 9c0 1.105 2.686 2 6 2s6-.895 6-2" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M7 9a5 5 0 0110 0v0" />
             </svg>
-            <span id="customersCounter" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 mb-1">0</span>
-            <p class="text-sm sm:text-base md:text-lg font-semibold text-gray-800">Zadovoljnih klijenata</p>
-            <p class="text-xs sm:text-sm text-gray-500 mt-1">Raste svakog dana</p>
+            <span id="customersCounter"
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-emerald-600 mb-1">0</span>
+            <p class="text-base sm:text-lg font-semibold text-slate-800">Zadovoljnih klijenata</p>
+            <p class="text-sm text-slate-500 mt-1">Raste svakog dana</p>
           </div>
         </div>
 
         <!-- CTA button (Saznajte više) -->
         <div data-aos="fade-up" data-aos-delay="300">
-          <a 
-            href="#about"
-            class="inline-block bg-green-600 hover:bg-green-500 text-white font-bold rounded-full 
-                   px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 transition duration-300"
-            aria-label="Saznajte više o nama"
-          >
+          <a href="#about" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-full 
+                   px-6 py-3 sm:px-8 sm:py-4 transition duration-300" aria-label="Saznajte više o nama">
             Saznajte više
           </a>
         </div>
@@ -311,16 +236,11 @@
     </section>
 
     <!-- O nama -->
-    <section id="about" class="py-16 container mx-auto px-4">
-      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+    <section id="about" class="py-16">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center md:space-x-8">
         <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-up" aria-label="Slika - o nama">
-          <img 
-            src="bojler-uzice.jpg" 
-            alt="Proizvodnja bojlera" 
-            width="600" height="400"
-            loading="lazy"
-            class="rounded-lg shadow-lg w-full object-cover"
-          />
+          <img src="bojler-uzice.jpg" alt="Proizvodnja bojlera" width="600" height="400" loading="lazy"
+            class="rounded-lg shadow-lg w-full object-cover" />
         </div>
         <div class="md:w-1/2 flex flex-col items-center md:items-start" data-aos="zoom-in">
           <h2 class="text-3xl font-bold mb-4">O Bojleru</h2>
@@ -330,113 +250,117 @@
             i ponosno sarađujemo sa klijentima u Požegi, Bajinoj Bašti, Zlatiboru, Priboju, Novoj Varoši i šire.
           </p>
           <p class="mb-4">
-            Od savremenih bojlera velikih zapremina do inovativnih prohromskih proizvoda, naš cilj je da vam ponudimo najbolje
+            Od savremenih bojlera velikih zapremina do inovativnih prohromskih proizvoda, naš cilj je da vam ponudimo
+            najbolje
             što nudi inox industrija, uz dugotrajan kvalitet.
           </p>
-          <a 
-            href="bojleri.html" 
-            class="inline-block bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-semibold transition duration=300"
-            aria-label="Istražite naše bojlere"
-          >
+          <a href="bojleri.html"
+            class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white py-2 px-6 rounded-full font-semibold transition duration-300"
+            aria-label="Istražite naše bojlere">
             Istražite bojlere
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Naši proizvodi -->
-    <section class="py-16 bg-gray-100">
-      <div class="container mx-auto px-4">
+    <!-- Naši proizvodi (Unified Product Cards) -->
+    <section class="py-16 bg-slate-100">
+      <div class="max-w-7xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12" data-aos="zoom-in">Najpopularniji proizvodi</h2>
         <div class="grid md:grid-cols-3 gap-8">
-          <!-- 1. Bojler -->
-          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
-            <img 
-              src="standardni_bojler.webp" 
-              alt="Visoko efikasni bojler" 
-              width="400" height="300"
-              loading="lazy"
-              class="w-full h-48 object-contain rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold mb-2">Visoko efikasni bojler</h3>
-            <p class="text-gray-600 mb-4">Štedi energiju uz vrhunske performanse.</p>
-            <a 
-              href="bojleri.html" 
-              class="text-green-600 hover:text-green-500 font-semibold"
-              aria-label="Saznajte više o bojlerima"
-            >
-              Saznajte više &rarr;
-            </a>
-          </div>
 
-          <!-- 2. Dimnjak -->
-          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-            <img 
-              src="dimnjak_mala.jpeg" 
-              alt="Prohromski dimnjak" 
-              width="400" height="300"
-              loading="lazy"
-              class="w-full h-48 object-contain rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold mb-2">Prohromski dimnjak</h3>
-            <p class="text-gray-600 mb-4">Kućni dimnjaci otporni na koroziju, sa dugim vekom trajanja.</p>
-            <a 
-              href="dimnjaci.html" 
-              class="text-green-600 hover:text-green-500 font-semibold"
-              aria-label="Saznajte više o dimnjacima"
-            >
-              Saznajte više &rarr;
-            </a>
-          </div>
+          <!-- Card 1 -->
+          <a href="bojleri.html"
+            class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
+            data-aos="fade-up" data-ripple>
+            <div>
+              <img src="standardni_bojler.webp" alt="Visoko efikasni bojler" width="400" height="300" loading="lazy"
+                class="w-full h-48 object-contain rounded mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Visoko efikasni bojler</h3>
+              <p class="text-slate-600 mb-4">
+                Štedi energiju uz vrhunske performanse.
+              </p>
+            </div>
+            <div>
+              <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+                Saznajte više &rarr;
+              </span>
+            </div>
+          </a>
 
-          <!-- 3. Ostalo -->
-          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-            <img 
-              src="pecenjara.webp" 
-              alt="Prilagođeni prohromski proizvodi" 
-              width="400" height="300"
-              loading="lazy"
-              class="w-full h-48 object-contain rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold mb-2">Ostali prohromski proizvodi</h3>
-            <p class="text-gray-600 mb-4">Pečenjare, pekači, posude, ražnjevi, pasterizatori i više.</p>
-            <a 
-              href="prohromski-proizvodi.html" 
-              class="text-green-600 hover=text-green-500 font-semibold"
-              aria-label="Saznajte više o prilagođenim inox proizvodima"
-            >
-            
-              Saznajte više &rarr;
-            </a>
-          </div>
+          <!-- Card 2 -->
+          <a href="dimnjaci.html"
+            class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
+            data-aos="fade-up" data-aos-delay="100" data-ripple>
+            <div>
+              <img src="dimnjak_mala.jpeg" alt="Prohromski dimnjak" width="400" height="300" loading="lazy"
+                class="w-full h-48 object-contain rounded mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Prohromski dimnjak</h3>
+              <p class="text-slate-600 mb-4">
+                Kućni dimnjaci otporni na koroziju, sa dugim vekom trajanja.
+              </p>
+            </div>
+            <div>
+              <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+                Saznajte više &rarr;
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="prohromski-proizvodi.html"
+            class="relative overflow-hidden bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between h-full"
+            data-aos="fade-up" data-aos-delay="200" data-ripple>
+            <div>
+              <img src="pecenjara.webp" alt="Prilagođeni prohromski proizvodi" width="400" height="300" loading="lazy"
+                class="w-full h-48 object-contain rounded mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Ostali prohromski proizvodi</h3>
+              <p class="text-slate-600 mb-4">
+                Pečenjare, pekači, posude, ražnjevi, pasterizatori i više.
+              </p>
+            </div>
+            <div>
+              <span class="text-emerald-600 font-semibold group-hover:text-emerald-500">
+                Saznajte više &rarr;
+              </span>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
 
     <!-- Kontakt (bez forme, samo telefoni) -->
-    <section class="py-16 container mx-auto px-4" id="contact">
-      <div class="text-center mb-12" data-aos="zoom-in">
-        <h2 class="text-3xl font-bold">Kontaktirajte nas</h2>
-        <p class="text-gray-600 mt-2">Stojimo vam na raspolaganju za sva pitanja.</p>
-      </div>
-      <div class="text-center max-w-xl mx-auto" data-aos="fade-up" aria-label="Kontakt telefonski broj i email">
-        <p class="mb-4 text-lg">Kontaktirajte nas na:</p>
-        <p class="text-xl font-semibold text-gray-800 mb-2" aria-label="Telefon">+381 31 551 239</p>
-        <p class="text-xl font-semibold text-gray-800 mb-6" aria-label="Email">bojler.d.ue@gmail.com</p>
-        <p class="text-gray-600">Biće nam zadovoljstvo da vam pomognemo.</p>
+    <section class="py-16" id="contact">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12" data-aos="zoom-in">
+          <h2 class="text-3xl font-bold">Kontaktirajte nas</h2>
+          <p class="text-slate-600 mt-2">Stojimo vam na raspolaganju za sva pitanja.</p>
+        </div>
+        <div class="text-center max-w-xl mx-auto" data-aos="fade-up" aria-label="Kontakt telefonski broj i email">
+          <p class="mb-4 text-lg">Kontaktirajte nas na:</p>
+          <p class="text-xl font-semibold text-slate-800 mb-2" aria-label="Telefon">+381 31 551 239</p>
+          <p class="text-xl font-semibold text-slate-800 mb-6" aria-label="Email">bojler.d.ue@gmail.com</p>
+          <p class="text-slate-600">Biće nam zadovoljstvo da vam pomognemo.</p>
+        </div>
       </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-400 py-4">
-    <div class="container mx-auto px-4 text-center">
-      <p>&copy; <span id="year"></span> <a href="https://www.linkedin.com/in/djordjepantelic/" class="text-gray-200 hover:text-green-500 transition">Đole</a>. Sva prava zadržana.</p>
+  <footer class="bg-slate-900 text-slate-400 py-4">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>
+        &copy; <span id="year"></span>
+        <a href="https://www.linkedin.com/in/djordjepantelic/"
+          class="text-slate-200 hover:text-emerald-400 transition">Đole</a>.
+        Sva prava zadržana.
+      </p>
     </div>
   </footer>
 
-  <!-- Skriptovi (Vanta.js, AOS, Mobile Menu, Counter) -->
+  <!-- Scripts (Vanta.js, AOS, Mobile Menu, Counter, Ripple) -->
   <!-- 1) THREE.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <!-- 2) Vanta Birds -->
@@ -452,7 +376,7 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile Menu (top-down dropdown) Toggle
+    // Mobile Menu Toggle
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const hamburgerIcon = document.getElementById('hamburgerIcon');
@@ -461,20 +385,7 @@
     menuBtn.addEventListener('click', () => {
       hamburgerIcon.classList.toggle('hidden');
       closeIcon.classList.toggle('hidden');
-
-      if (mobileMenu.classList.contains('show')) {
-        // Hide the menu
-        mobileMenu.classList.remove('show');
-        setTimeout(() => {
-          mobileMenu.classList.add('hidden');
-        }, 300);
-      } else {
-        // Show the menu
-        mobileMenu.classList.remove('hidden');
-        setTimeout(() => {
-          mobileMenu.classList.add('show');
-        }, 10);
-      }
+      mobileMenu.classList.toggle('hidden');
     });
 
     // Counters
@@ -499,7 +410,7 @@
         stepCount++;
         current = start + increment * stepCount;
         if (stepCount >= steps) {
-          current = end; 
+          current = end;
           clearInterval(timer);
         }
         obj.textContent = Math.floor(current).toLocaleString();
@@ -507,8 +418,8 @@
     }
 
     window.addEventListener('DOMContentLoaded', () => {
-      animateValue('yearsCounter', 0, yearsInBusiness, 4000, 100);
-      animateValue('customersCounter', 0, happyCustomers, 4000, 100);
+      animateValue('yearsCounter', 0, yearsInBusiness, 3000, 100);
+      animateValue('customersCounter', 0, happyCustomers, 3000, 100);
     });
 
     // Vanta.js Birds
@@ -527,6 +438,51 @@
         quantity: 4.0
       });
     });
+
+    // Ripple Effect (for data-ripple elements)
+    document.addEventListener('click', function (e) {
+      const target = e.target.closest('[data-ripple]');
+      if (target) {
+        const rect = target.getBoundingClientRect();
+        const circle = document.createElement('span');
+        const diameter = Math.max(rect.width, rect.height);
+        const radius = diameter / 2;
+
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${e.clientX - rect.left - radius}px`;
+        circle.style.top = `${e.clientY - rect.top - radius}px`;
+        circle.classList.add('ripple-animation');
+
+        // Append ripple
+        target.appendChild(circle);
+
+        // Remove after animation
+        setTimeout(() => {
+          circle.remove();
+        }, 600);
+      }
+    });
   </script>
+
+  <!-- Minimal ripple styling -->
+  <style>
+    .ripple-animation {
+      position: absolute;
+      border-radius: 9999px;
+      background: rgba(99, 194, 165, 0.3);
+      /* emerald-300-ish */
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  </style>
 </body>
+
 </html>
